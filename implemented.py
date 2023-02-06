@@ -1,9 +1,9 @@
-from dao.movie import MovieDAO
-from dao.director import DirectorDAO
-from dao.genre import GenreDAO
+from dao import MovieDAO
+from dao import DirectorDAO
+from dao import GenreDAO
 from service.movie import MovieService
 from service.genre import GenreService
-from service.director import DirectorService
+from service import DirectorService
 from setup_db import db
 
 movie_dao = MovieDAO(session=db.session)
